@@ -1,0 +1,1 @@
+(()=>{const t=document.querySelector("#restaurant"),e=document.createElement("h1");e.classList.add("content"),e.textContent="test",t.appendChild(e)})();
