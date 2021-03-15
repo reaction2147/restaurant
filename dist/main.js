@@ -1,1 +1,1 @@
-(()=>{const t=document.querySelector("#restaurant"),e=document.createElement("h1");e.classList.add("content"),e.textContent="test",t.appendChild(e)})();
+!function(){const t=document.getElementById("restaurant"),e=function(t){const e=document.createElement("nav");e.setAttribute("id","nav");const n=function(t,e){const n=document.createElement("button");return n.setAttribute("id","home"),document.createElement("span").textContent="home",n.appendChild("span"),n.classList.add("tab"),n}();return e.appendChild(n),e}();t.appendChild(e)}();
