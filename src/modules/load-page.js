@@ -47,7 +47,7 @@ function createMain(id) {
 function createFooter(id, text) {
   const footer = document.createElement('footer');
   footer.setAttribute("id", id);
-  const footerText = document.createElement('h3');
+  const footerText = document.createElement('h4');
   footerText.textContent = text;
   footer.appendChild(footerText);
   return footer;
@@ -63,7 +63,7 @@ function createPage() {
   //create nav
   const navBar = createNav("nav");
   container.appendChild(navBar);
-  //creat tab content
+  //create tab content
   const tabContent = createMain("tab-content");
   container.appendChild(tabContent);
   //create footer
