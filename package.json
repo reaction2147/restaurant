@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/reaction2147/restaurant#readme",
   "devDependencies": {
+    "prettier": "2.2.1",
     "webpack": "^5.25.1",
     "webpack-cli": "^4.5.0"
   }
