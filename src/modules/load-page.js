@@ -1,11 +1,12 @@
+//this content is static. Dynamic content is pull from other pages into the CreateMain function
 // Create navigation
 
 function createNav(id) {
   const nav = document.createElement("nav");
   nav.setAttribute("id", id);
-  const homeBtn = createBtn("home", "home");
-  const menuBtn = createBtn("menu", "menu");
-  const contactBtn = createBtn("contact", "contact");
+  const homeBtn = createBtn("home", "Home");
+  const menuBtn = createBtn("menu", "Menu");
+  const contactBtn = createBtn("contact", "Contact");
   nav.appendChild(homeBtn);
   nav.appendChild(menuBtn);
   nav.appendChild(contactBtn);
@@ -72,3 +73,4 @@ function createPage() {
 }
 
 export default createPage;
+

@@ -1,3 +1,4 @@
+
 function setBtnActive(id) {
   const activeBtn = document.querySelector(".tab.active");
   if (activeBtn) activeBtn.classList.remove("active");
@@ -10,10 +11,25 @@ function createSection() {
   const section = document.createElement("section");
   section.classList.add("contact-section");
 
-  const contactInfo = document.createElement("p");
+  const contactInfo = document.createElement("h1");
   contactInfo.classList.add("contact-info");
-  contactInfo.textContent = "TEST";
+  contactInfo.textContent = "Contact";
   section.appendChild(contactInfo);
+
+  const tel = document.createElement("p");
+  tel.classList.add("para-content");
+  tel.textContent = "Tel - 94582 281941"
+  section.appendChild(tel);
+
+  const adressTitle = document.createElement('h1');
+  adressTitle.classList.add('contact-info');
+  adressTitle.textContent = "Address";
+  section.appendChild(adressTitle);
+
+  const address = document.createElement('p');
+  address.classList.add("para-content");
+  address.textContent = "Star Base Alpha";
+  section.appendChild(address);
   return section;
 }
 

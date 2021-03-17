@@ -1,7 +1,9 @@
 function setBtnActive(id) {
+    // remove active state from button
   const activeBtn = document.querySelector(".tab.active");
   if (activeBtn) activeBtn.classList.remove("active");
 
+    // add active state to button
   const homeBtn = document.getElementById(id);
   homeBtn.classList.add("active");
 }
@@ -21,7 +23,7 @@ function createMenu() {
 
   const title = document.createElement("h1");
   title.classList.add("title-section");
-  title.textContent = "TEST";
+  title.textContent = "MENU";
   section.appendChild(title);
 
   return section;

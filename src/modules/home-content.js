@@ -1,3 +1,4 @@
+//Create the body and text for Home page 
 function createSection() {
   const section = document.createElement("section");
   section.classList.add("section");
@@ -14,7 +15,7 @@ function createSection() {
   section.appendChild(sectionPara);
   return section;
 }
-
+// Remove current active button and set to new
 function setBtnActive(id) {
   const activeBtn = document.querySelector(".tab.active");
   if (activeBtn) activeBtn.classList.remove("active");
@@ -23,6 +24,7 @@ function setBtnActive(id) {
   homeBtn.classList.add("active");
 }
 
+// Pull functions from this page into 1 function to save on space and keep it tidy
 function loadHome() {
   const content = document.getElementById("tab-content");
   content.classList.add("grid-layout");
@@ -31,5 +33,5 @@ function loadHome() {
   setBtnActive("home");
   content.appendChild(aboutSection);
 }
-
+// Export the function above to call on the index.js
 export default loadHome;
