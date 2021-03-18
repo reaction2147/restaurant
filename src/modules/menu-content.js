@@ -20,9 +20,9 @@ function loadMenu() {
   content.appendChild(title);
   const foods = createMenu(
     "./images/alien.jpg",
-    "Alien Fast Food",
+    "Alien Cakes",
     "20 Specels",
-    "Alien Fast Food"
+    "Alien Cakes"
   );
   content.appendChild(foods);
 }
