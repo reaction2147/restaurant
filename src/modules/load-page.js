@@ -59,7 +59,7 @@ function createPage() {
   // taget container
   const container = document.getElementById("container");
   //create title
-  const title = createHeader("header", "This is some awesome Title");
+  const title = createHeader("header", "Alpha Centuri Cafe");
   container.appendChild(title);
   //create nav
   const navBar = createNav("nav");
@@ -68,7 +68,7 @@ function createPage() {
   const tabContent = createMain("tab-content");
   container.appendChild(tabContent);
   //create footer
-  const footer = createFooter("footer", "Created by Nippon Arts");
+  const footer = createFooter("footer", "Created by Will Ford");
   container.appendChild(footer);
 }
 

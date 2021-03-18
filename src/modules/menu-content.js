@@ -13,25 +13,25 @@ function loadMenu() {
   const content = document.getElementById("tab-content");
   content.classList.add("grid-layout");
   content.textContent = "";
-  const menu = createMenu(
-   'https://starwarsblog.starwars.com/wp-content/uploads/2018/07/ackbar-ice-cream-tall.jpg',
-    'Alien Fast Food',
-    '20 Specels',
-    'Alien Fast Food')
-  content.appendChild(menu);
-}
-
-function createMenu(src, text, price, alt) {
-  const section = document.createElement("section");
-  section.classList.add("section");
 
   const title = document.createElement("h1");
   title.classList.add("title-section");
   title.textContent = "MENU";
-  section.appendChild(title);
+  content.appendChild(title);
+  const foods = createMenu(
+    "./images/alien.jpg",
+    "Alien Fast Food",
+    "20 Specels",
+    "Alien Fast Food"
+  );
+  content.appendChild(foods);
+}
 
-  const img = document.createElement("image");
-  
+function createMenu(src, text, price, alt) {
+  const food = document.createElement("div");
+  food.classList.add("food");
+  const img = document.createElement("img");
+
   img.setAttribute("src", src);
   img.setAttribute("alt", alt);
 
@@ -47,11 +47,10 @@ function createMenu(src, text, price, alt) {
   description.appendChild(foodName);
   description.appendChild(foodPrice);
 
-  section.appendChild(img);
-  section.appendChild(description);
-  
-  
-  return section;
+  food.appendChild(img);
+  food.appendChild(description);
+
+  return food;
 }
 
 export default loadMenu;

@@ -16,6 +16,7 @@ button {
     border: none;
     margin-left: 15px;
     cursor: pointer;
+    outline: none;
 }
 
 body {
@@ -84,7 +85,51 @@ button:hover {
     padding: 20px;
 }
 
-/* Food /*
+/* Food */
 
+.food {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 7px 7px rgba(37, 16, 41, 0.7);
+    width: 500px;
+    height: 250px;
+    transition: 0.4s;
+    overflow: hidden;
+    margin: 20px 0;
+    animation: appear 1s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .food .description {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
 
+  }
+  .food img {
+    width: 100%;
+    height: 100%;
+  }
+  .food:hover .description {
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    transform: translateY(-100%);
+  }
+  .food:hover {
+    box-shadow: 0 0 20px 2px #E76F51;
+    border-color: #E76F51;
+  }
+  .food .description h3 {
+    font-size: 22px;
+    color: white;
+  }
+
+  .food .description h2 {
+      color: white;
+  }
   

@@ -11,7 +11,7 @@ function createSection() {
   const sectionPara = document.createElement("p");
   sectionPara.classList.add("para-section");
   sectionPara.textContent =
-    "This is some text about how awsome this restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    "Do you like your spurgles to be full of spegles. Do you like to spend less speckles....then come on down to Alpha Centuri Cafe. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   section.appendChild(sectionPara);
   return section;
 }
